@@ -22,6 +22,13 @@ public class MyHelper  extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
+        String query = "CREATE TABLE " + tblName + "(" + wordID + " INTEGER PRIMARY KEY AUTOINCREMENT ," +
+                wordName + "Text, "
+                + meaning + " TEXT " +
+
+        ")";
+        db.execSQL(query);
+
     }
 
     @Override

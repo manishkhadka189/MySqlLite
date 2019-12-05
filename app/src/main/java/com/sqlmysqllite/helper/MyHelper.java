@@ -30,6 +30,7 @@ public class MyHelper  extends SQLiteOpenHelper {
         db.execSQL(query);
 
     }
+//    manish
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
